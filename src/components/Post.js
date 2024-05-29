@@ -1,12 +1,15 @@
 import React from "react";
 import { formatDistanceToNow } from "date-fns";
 import { tr } from "date-fns/locale";
-
+import { useDispatch } from "react-redux";
+import { notSil } from "../actions";
+import { toast } from "react-toastify";
 export default function Post({ item }) {
+const dispatcher = useDispatch()
 
   function handleSil() {
-    // burada ilgili eylemi dispatch edin
-    // sonra toast mesajı gösterin
+dispatcher(notSil( item.id))
+toast.success("Note deleted successfully!");    
   }
 
   return (
