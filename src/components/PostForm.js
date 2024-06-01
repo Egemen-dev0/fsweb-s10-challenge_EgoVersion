@@ -4,7 +4,7 @@ import { nanoid } from "nanoid";
 import { useHistory } from "react-router";
 import Gratitude from "./../assets/grForm.png";
 import { useDispatch } from "react-redux";
-import { notEkle } from "../actions";
+import { notEkle} from "./../actıon/actions";
 import "react-toastify/dist/ReactToastify.css";
 import { toast } from "react-toastify";
 

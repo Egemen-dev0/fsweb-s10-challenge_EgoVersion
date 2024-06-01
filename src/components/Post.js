@@ -2,8 +2,8 @@ import React from "react";
 import { formatDistanceToNow } from "date-fns";
 import { tr } from "date-fns/locale";
 import { useDispatch } from "react-redux";
-import { notSil } from "../actions";
 import { toast } from "react-toastify";
+import { notSil } from "../actıon/actions";
 export default function Post({ item }) {
 const dispatcher = useDispatch()
 
